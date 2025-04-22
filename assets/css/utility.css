@@ -1,0 +1,65 @@
+/* =======================================
+   TYPOGRAPHY UTILITIES (based on tokens)
+   ======================================= */
+
+/* XL Text - 56px / 66px */
+.text-preset-1 {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-xl-font-size);
+    line-height: var(--text-xl-line-height);
+    font-weight: var(--font-weight-light);
+  }
+  
+  /* LG Text - 40px / 47px */
+  .text-preset-2 {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-lg-font-size);
+    line-height: var(--text-lg-line-height);
+    font-weight: var(--font-weight-light);
+  }
+  
+  /* MD Text - 32px / 38px */
+  .text-preset-3 {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-md-font-size);
+    line-height: var(--text-md-line-height);
+    font-weight: var(--font-weight-light);
+  }
+  
+  /* Base Text - 24px / 28px */
+  .text-preset-4 {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-base-font-size);
+    line-height: var(--text-base-line-height);
+    font-weight: var(--font-weight-light);
+  }
+  
+  /* SM Text - 18px / 21px */
+  .text-preset-5-regular {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-sm-font-size);
+    line-height: var(--text-sm-line-height);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  /* SM Text (Medium) - 18px / 21px */
+  .text-preset-5-medium {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-sm-font-size);
+    line-height: var(--text-sm-line-height);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  /* XS Text - 15px / 18px */
+  .text-preset-6 {
+    font-family: var(--font-family-rubik);
+    font-size: var(--text-xs-font-size);
+    line-height: var(--text-xs-line-height);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  /* Additional utility for text alignment */
+  .text-center { text-align: center; }
+  .text-left   { text-align: left; }
+  .text-right  { text-align: right; }
+  
