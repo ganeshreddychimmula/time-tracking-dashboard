@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="./assets/main.js" defer></script>
 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
@@ -26,9 +27,9 @@
         </header>
         <nav class="view-selector" aria-label="Time view options">
           <ul>
-            <li><button>Daily</button></li>
-            <li><button class="active">Weekly</button></li>
-            <li><button>Monthly</button></li>
+            <li><button data-timeframe="daily" class="timeframe">Daily</button></li>
+            <li><button data-timeframe="weekly" class="timeframe">Weekly</button></li>
+            <li><button data-timeframe="monthly" class="timeframe">Monthly</button></li>
           </ul>
         </nav>
       </aside>
@@ -39,8 +40,8 @@
             <h2>Work</h2>
             <button aria-label="More options">...</button>
           </header>
-          <p class="current-hours">32hrs</p>
-          <p class="previous-hours">Last Week - 36hrs</p>
+          <p class="current-hours">0hrs</p>
+          <p class="previous-hours">Last Week - 0hrs</p>
         </article>
 
         <article class="activity-card play">
@@ -48,8 +49,8 @@
             <h2>Play</h2>
             <button aria-label="More options">...</button>
           </header>
-          <p class="current-hours">10hrs</p>
-          <p class="previous-hours">Last Week - 8hrs</p>
+          <p class="current-hours">0hrs</p>
+          <p class="previous-hours">Last Week - 0hrs</p>
         </article>
 
         <article class="activity-card study">
@@ -57,8 +58,8 @@
             <h2>Study</h2>
             <button aria-label="More options">...</button>
           </header> 
-          <p class="current-hours">4hrs</p>
-          <p class="previous-hours">Last Week - 7hrs</p>
+          <p class="current-hours">0hrs</p>
+          <p class="previous-hours">Last Week - 0hrs</p>
         </article>
 
         <article class="activity-card exercise">
@@ -66,8 +67,8 @@
             <h2>Exercise</h2>
             <button aria-label="More options">...</button>
           </header>
-          <p class="current-hours">4hrs</p>
-          <p class="previous-hours">Last Week - 5hrs</p>
+          <p class="current-hours">0hrs</p>
+          <p class="previous-hours">Last Week - 0hrs</p>
         </article>
 
         <article class="activity-card social">
@@ -75,8 +76,8 @@
             <h2>Social</h2>
             <button aria-label="More options">...</button>
           </header>
-          <p class="current-hours">5hrs</p>
-          <p class="previous-hours">Last Week - 10hrs</p>
+          <p class="current-hours">0hrs</p>
+          <p class="previous-hours">Last Week - 0hrs</p>
         </article>
 
         <article class="activity-card self-care">
@@ -84,8 +85,8 @@
             <h2>Self Care</h2>
             <button aria-label="More options">...</button>
           </header>
-          <p class="current-hours">2hrs</p>
-          <p class="previous-hours">Last Week - 2hrs</p>
+          <p class="current-hours">0hrs</p>
+          <p class="previous-hours">Last Week - 0hrs</p>
         </article>
       </section>
     </main>
