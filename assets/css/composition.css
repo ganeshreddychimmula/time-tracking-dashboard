@@ -1,0 +1,36 @@
+.dashboard{
+    max-width: min(1116px, 90%);
+    margin-block: 81px;
+    display: grid;
+    grid-template-columns: minmax(327px, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* --For window screen-- */
+@media screen and (min-width:550px) {
+    .dashboard{
+        grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    .profile-card{
+        grid-column: 1 / -1;
+    }
+}
+
+/* --For window screen-- */
+@media screen and (min-width:1212px) {
+    .dashboard{
+        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    .profile-card{
+        grid-column: span 1;
+        grid-row: 1 / 3;
+    }
+}
