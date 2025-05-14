@@ -45,7 +45,7 @@
   --text-xs-font-size: 15px;
   --text-xs-line-height: 18px;
 
-  --font-weight-light: 300;
+  --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
@@ -81,10 +81,10 @@ html, body{
 }
 
 body{
-    min-height: 100%;
+    min-height: 100vh;
     height: fit-content;
-    display: grid;
-    grid-template-rows: 1fr;
-    place-items: center;
-    overflow-x: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 24px;
 }

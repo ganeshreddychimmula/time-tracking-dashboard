@@ -1,13 +1,13 @@
 .dashboard{
-    max-width: min(1116px, 90%);
+    width: 100%;
+    max-width: 1116px;
     margin-block: 81px;
     display: grid;
-    grid-template-columns: minmax(327px, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 24px;
     place-items: center;
     justify-content: center;
-    align-content: center;
 }
 
 /* --For window screen-- */

@@ -63,3 +63,19 @@
   .text-left   { text-align: left; }
   .text-right  { text-align: right; }
   
+  .active{
+    color: var(--color-white);
+  }
+
+  .flex-row{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
