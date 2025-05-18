@@ -7,10 +7,11 @@ let handledBreakpoint1 = false;
 
 // getting json data
 async function getJSON() {
-    let response = await fetch("../data.json");
-    // 
-    if(!response.ok){
-        // handle later
+    let response = await fetch("./data.json");
+    
+    if(!response.ok) {
+      console.error(`Failed to load data: ${response.status} ${response.statusText}`);
+      return [];
     }
     let data = await response.json();
     return data;
