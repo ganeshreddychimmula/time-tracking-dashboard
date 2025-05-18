@@ -38,7 +38,7 @@
 
 .report-label {
     color: var(--color-navy-200);
-  }
+}
 
 .view-selector{
     height: 100%;
@@ -56,6 +56,11 @@
   gap: clamp(5px, 5px + 15vw ,200px);
   cursor: pointer;
 }
+
+.view-selector li:hover{
+  color: var(--color-white);
+}
+
 
 /* activity card */
 
@@ -91,6 +96,11 @@
     gap: 8px;
     z-index: 1;
     position: relative;
+}
+
+.activity-card-wrapper:hover{
+  background-color: var(--color-navy-800);
+  cursor: pointer;
 }
 
 .activity-card-header{
