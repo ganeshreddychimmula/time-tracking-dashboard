@@ -1,8 +1,9 @@
 let dashboardData;
-let currentHourSpaces = document.querySelectorAll(".current-hours")
-let previousHoursSpaces = document.querySelectorAll(".previous-hours")
+let currentHourSpaces = document.querySelectorAll(".current-hours");
+let previousHoursSpaces = document.querySelectorAll(".previous-hours");
 let currentlySelectedTimeframe = "weekly";
-let timeframeButtons = document.querySelectorAll(".timeframe") 
+let timeframeButtons = document.querySelectorAll(".timeframe");
+let handledBreakpoint1 = false;
 
 // getting json data
 async function getJSON() {
@@ -62,3 +63,19 @@ getJSON().then((data)=>{
     // console.log(Array.isArray(dashboardData));
 }).then(()=>{setHours(dashboardData, 'weekly')});
 
+/* handling resize */
+function breakpoint1Handler(){
+        if(window.innerWidth >= 550){
+            if(!handledBreakpoint1){
+                handledBreakpoint1 = true;
+            currentHourSpaces.forEach((currentHour)=> {currentHour.classList.replace("text-preset-3","text-preset-1")});
+            }    
+        }else{
+            handledBreakpoint1 = false;
+            currentHourSpaces.forEach((currentHour)=> {currentHour.classList.replace("text-preset-1", "text-preset-3")});
+        }
+}
+
+breakpoint1Handler();
+
+window.addEventListener('resize', breakpoint1Handler)

@@ -87,4 +87,5 @@ body{
     justify-content: center;
     align-items: center;
     padding-inline: 24px;
+    background-color: var(--color-navy-950);
 }

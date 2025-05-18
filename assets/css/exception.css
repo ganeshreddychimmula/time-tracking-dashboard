@@ -1,0 +1,29 @@
+.work::before{
+    background-color: var(--color-orange-300);
+    background-image: url("../../images/icon-work.svg");
+}
+
+.play::before{
+    background-color: var(--color-blue-300);
+    background-image: url("../../images/icon-play.svg");
+}
+
+.study::before{
+    background-color: var(--color-pink-400);
+    background-image: url("../../images/icon-study.svg");
+}
+
+.exercise::before{
+    background-color: var(--color-green-400);
+    background-image: url("../../images/icon-exercise.svg");
+}
+
+.social::before{
+    background-color: var(--color-purple-700);
+    background-image: url("../../images/icon-social.svg");
+}
+
+.self-care::before{
+    background-color: var(--color-yellow-300);
+    background-image: url("../../images/icon-self-care.svg");
+}
