@@ -8,7 +8,7 @@ let handledBreakpoint1 = false;
 // getting json data
 async function getJSON() {
     let response = await fetch("./data.json");
-    
+
     if(!response.ok) {
       console.error(`Failed to load data: ${response.status} ${response.statusText}`);
       return [];
@@ -33,22 +33,25 @@ function setHours(data, timeframe){
     }
 }
 
+// handle activity frequency selection
 function handleActiveStatus(current){
     timeframeButtons.forEach((button)=> {
         if(button.dataset.timeframe !== current){
-            button.classList.remove("active");
+            // button.classList.remove("active");
+            button.dataset.state = "";
         }else{
             currentlySelectedTimeframe = current;
-            button.classList.add("active");
+            // button.classList.add("active");
+            button.dataset.state = "active"; 
         }
     })
+    setHours(dashboardData, currentlySelectedTimeframe);
 }
 
 function handleTimeframeOnClick(selected){
     if(selected.dataset.timeframe !== currentlySelectedTimeframe){
         // make it active others inactive
         handleActiveStatus(selected.dataset.timeframe);
-        setHours(dashboardData, currentlySelectedTimeframe);
     }
 }
 
@@ -57,6 +60,7 @@ timeframeButtons.forEach((timeframeButton)=> {
         handleTimeframeOnClick(e.target);
     })
 })
+// end of activity frequency selection handling
 
 getJSON().then((data)=>{
     dashboardData = data;

@@ -27,3 +27,7 @@
     background-color: var(--color-yellow-300);
     background-image: url("../../images/icon-self-care.svg");
 }
+
+.view-selector li[data-state="active"]{
+    color: var(--color-white);
+}
