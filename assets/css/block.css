@@ -15,7 +15,6 @@
   justify-content: flex-start;
   gap: 24px;
   background-color: var(--color-purple-600);
-  align-items: center;
   padding: 32px;
   border-radius: 15px;
   color: var(--color-white);
@@ -111,7 +110,6 @@
 .hours{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .activity-card-header h2{
@@ -174,7 +172,7 @@
 
   .view-selector ul {
     flex-direction: column;
-    align-content: start;
+    align-items: start;
     flex-wrap: wrap;
     gap: 21px;
   }

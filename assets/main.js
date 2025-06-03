@@ -69,6 +69,7 @@ getJSON().then((data)=>{
 }).then(()=>{setHours(dashboardData, 'weekly')});
 
 /* handling resize */
+// handling resize for current hours
 function breakpoint1Handler(){
         if(window.innerWidth >= 550){
             if(!handledBreakpoint1){

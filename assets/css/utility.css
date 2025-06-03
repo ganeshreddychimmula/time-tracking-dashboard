@@ -59,23 +59,30 @@
   }
   
   /* Additional utility for text alignment */
-  .text-center { text-align: center; }
-  .text-left   { text-align: left; }
-  .text-right  { text-align: right; }
+  .u-text-center { text-align: center; }
+  .u-text-left   { text-align: left; }
+  .u-text-right  { text-align: right; }
   
-  .active{
-    color: var(--color-white);
+  .u-align-center{
+    align-items: center;
   }
 
-  .flex-row{
-    display: flex;
+  .u-align-start{
+    align-items: flex-start;
+  }
+
+  .u-justify-content-start{
+    justify-content: flex-start;
+  }
+
+  .u-justify-content-center{
+    justify-content: center;
+  }
+
+  .u-justify-content-space-between{
     justify-content: space-between;
   }
 
-  .flex-column{
-    display: flex;
-    flex-direction: column;
+  .active{
+    color: var(--color-white);
   }
-
-
-
