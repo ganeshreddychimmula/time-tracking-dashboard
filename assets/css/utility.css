@@ -3,7 +3,7 @@
    ======================================= */
 
 /* XL Text - 56px / 66px */
-.text-preset-1 {
+.u-text-preset-1 {
   font-family: var(--font-family-rubik);
   font-size: var(--text-xl-font-size);
   line-height: var(--text-xl-line-height);
@@ -11,7 +11,7 @@
 }
 
 /* LG Text - 40px / 47px */
-.text-preset-2 {
+.u-text-preset-2 {
   font-family: var(--font-family-rubik);
   font-size: var(--text-lg-font-size);
   line-height: var(--text-lg-line-height);
@@ -19,7 +19,7 @@
 }
 
 /* MD Text - 32px / 38px */
-.text-preset-3 {
+.u-text-preset-3 {
   font-family: var(--font-family-rubik);
   font-size: var(--text-md-font-size);
   line-height: var(--text-md-line-height);
@@ -27,7 +27,7 @@
 }
 
 /* Base Text - 24px / 28px */
-.text-preset-4 {
+.u-text-preset-4 {
   font-family: var(--font-family-rubik);
   font-size: var(--text-base-font-size);
   line-height: var(--text-base-line-height);
@@ -35,7 +35,7 @@
 }
 
 /* SM Text - 18px / 21px */
-.text-preset-5-regular {
+.u-text-preset-5-regular {
   font-family: var(--font-family-rubik);
   font-size: var(--text-sm-font-size);
   line-height: var(--text-sm-line-height);
@@ -43,7 +43,7 @@
 }
 
 /* SM Text (Medium) - 18px / 21px */
-.text-preset-5-medium {
+.u-text-preset-5-medium {
   font-family: var(--font-family-rubik);
   font-size: var(--text-sm-font-size);
   line-height: var(--text-sm-line-height);
@@ -51,7 +51,7 @@
 }
 
 /* XS Text - 15px / 18px */
-.text-preset-6 {
+.u-text-preset-6 {
   font-family: var(--font-family-rubik);
   font-size: var(--text-xs-font-size);
   line-height: var(--text-xs-line-height);
@@ -398,6 +398,11 @@
 
 .u-static {
   position: static !important;
+}
+
+/* border utilities */
+.u-border-radius-standard {
+  border-radius: var(--border-radius-standard, 15px) !important;
 }
 
 /* Additional utility for text alignment */

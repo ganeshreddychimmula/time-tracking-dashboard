@@ -11,136 +11,242 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./assets/css/global.css"/>
-    <link rel="stylesheet" href="./assets/css/composition.css"/>
-    <link rel="stylesheet" href="./assets/css/utility.css"/>
-    <link rel="stylesheet" href="./assets/css/block.css"/>
-    <link rel="stylesheet" href="./assets/css/exception.css"/>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/composition.css" />
+    <link rel="stylesheet" href="./assets/css/utility.css" />
+    <link rel="stylesheet" href="./assets/css/block.css" />
+    <link rel="stylesheet" href="./assets/css/exception.css" />
     <script src="./assets/main.js" defer></script>
-
 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
-    <main class="dashboard">
-      <aside class="profile-card u-flex u-flex-column">
-        <header class="profile-header u-flex u-justify-content-start u-align-center">
-          <img src="images/image-jeremy.png" alt="Jeremy Robson" class="profile-photo" />
+    <main class="c-dashboard dashboard">
+      <aside
+        class="c-profile-card u-flex u-flex-column u-border-radius-standard profile-card"
+      >
+        <header
+          class="c-profile-header u-flex u-justify-content-start u-align-center u-border-radius-standard profile-header"
+        >
+          <img
+            src="images/image-jeremy.png"
+            alt="Jeremy Robson"
+            class="profile-photo u-border-radius-standard"
+          />
           <div class="profile-info u-flex u-flex-column u-align-items-start">
-            <p class="report-label text-preset-6">Report for</p>
-            <p class="profile-name text-preset-4">Jeremy Robson</p>
+            <p class="u-text-preset-6 report-label">Report for</p>
+            <p class="u-text-preset-4 profile-name">Jeremy Robson</p>
           </div>
         </header>
-        <nav class="view-selector" aria-label="Time view options">
+        <nav
+          class="c-view-selector view-selector"
+          aria-label="Time view options"
+        >
           <ul class="u-flex u-flex-row u-justify-content-space-between">
-            <li data-timeframe="daily" data-state="" class="timeframe">Daily</li>
-            <li data-timeframe="weekly" data-state="active" class="timeframe"> Weekly</li>
-            <li data-timeframe="monthly" data-state="" class="timeframe">Monthly</li>
+            <li
+              data-timeframe="daily"
+              data-state=""
+              class="u-text-preset-5-regular timeframe"
+            >
+              Daily
+            </li>
+            <li
+              data-timeframe="weekly"
+              data-state="active"
+              class="u-text-preset-5-regular timeframe"
+            >
+              Weekly
+            </li>
+            <li
+              data-timeframe="monthly"
+              data-state=""
+              class="u-text-preset-5-regular timeframe"
+            >
+              Monthly
+            </li>
           </ul>
         </nav>
       </aside>
 
-        <article data-cardtype="work" class="activity-card">
-          <div class="activity-card-wrapper">
-            <header class="activity-card-header">
-              <h2 class="text-preset-5-medium">Work</h2>
-              <button aria-label="More options">
-                <svg class="menu-icon u-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+      <article
+        data-cardtype="work"
+        class="c-activity-card u-border-radius-standard activity-card"
+      >
+        <div class="activity-card-wrapper u-border-radius-standard">
+          <header
+            class="activity-card-header u-flex u-justify-content-space-between"
+          >
+            <h2 class="u-text-preset-5-medium">Work</h2>
+            <button aria-label="More options">
+              <svg
+                class="menu-icon u-inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
               </svg>
             </button>
-            </header>
-            <section class="hours u-align-items-center">
-              <p class="current-hours text-preset-3">0hrs</p>
-              <p class="previous-hours text-preset-6">Last Week - 0hrs</p>
-            </section>
-          </div>
-        </article>
+          </header>
+          <section
+            class="c-hours u-align-items-center u-flex u-justify-content-space-between hours"
+          >
+            <p class="u-text-preset-3 current-hours">0hrs</p>
+            <p class="u-text-preset-6 previous-hours">Last Week - 0hrs</p>
+          </section>
+        </div>
+      </article>
 
-        <article data-cardtype="play" class="activity-card">
-          <div class="activity-card-wrapper">
-            <header class="activity-card-header">
-              <h2 class="text-preset-5-medium">Play</h2>
-              <button aria-label="More options">
-                <svg class="menu-icon u-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                </svg>
-              </button>
-            </header>
-            <section class="hours u-align-items-center">
-              <p class="current-hours text-preset-3">0hrs</p>
-              <p class="previous-hours text-preset-6">Last Week - 0hrs</p>
-            </section>
-          </div>
-        </article>
+      <article
+        data-cardtype="play"
+        class="c-activity-card u-border-radius-standard activity-card"
+      >
+        <div class="activity-card-wrapper u-border-radius-standard">
+          <header
+            class="activity-card-header u-flex u-justify-content-space-between"
+          >
+            <h2 class="u-text-preset-5-medium">Play</h2>
+            <button aria-label="More options">
+              <svg
+                class="menu-icon u-inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
+              </svg>
+            </button>
+          </header>
+          <section
+            class="c-hours u-align-items-center u-flex u-justify-content-space-between hours"
+          >
+            <p class="u-text-preset-3 current-hours">0hrs</p>
+            <p class="u-text-preset-6 previous-hours">Last Week - 0hrs</p>
+          </section>
+        </div>
+      </article>
 
-        <article data-cardtype="study" class="activity-card">
-          <div class="activity-card-wrapper">
-            <header class="activity-card-header">
-              <h2 class="text-preset-5-medium">Study</h2>
-              <button aria-label="More options">
-                <svg class="menu-icon u-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                </svg>
-              </button>
-            </header> 
-            <section class="hours u-align-items-center">
-              <p class="current-hours text-preset-3">0hrs</p>
-              <p class="previous-hours text-preset-6">Last Week - 0hrs</p>
-            </section>
-          </div>
-        </article>
+      <article
+        data-cardtype="study"
+        class="c-activity-card u-border-radius-standard activity-card"
+      >
+        <div class="activity-card-wrapper u-border-radius-standard">
+          <header
+            class="activity-card-header u-flex u-justify-content-space-between"
+          >
+            <h2 class="u-text-preset-5-medium">Study</h2>
+            <button aria-label="More options">
+              <svg
+                class="menu-icon u-inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
+              </svg>
+            </button>
+          </header>
+          <section
+            class="c-hours u-align-items-center u-flex u-justify-content-space-between hours"
+          >
+            <p class="u-text-preset-3 current-hours">0hrs</p>
+            <p class="u-text-preset-6 previous-hours">Last Week - 0hrs</p>
+          </section>
+        </div>
+      </article>
 
-        <article data-cardtype="exercise" class="activity-card">
-          <div class="activity-card-wrapper">
-            <header class="activity-card-header">
-              <h2 class="text-preset-5-medium">Exercise</h2>
-              <button aria-label="More options">
-                <svg class="menu-icon u-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                </svg>
-              </button>
-            </header>
-            <section class="hours u-align-items-center">
-              <p class="current-hours text-preset-3">0hrs</p>
-              <p class="previous-hours text-preset-6">Last Week - 0hrs</p>
-            </section>
-          </div>
-        </article>
+      <article
+        data-cardtype="exercise"
+        class="c-activity-card u-border-radius-standard activity-card"
+      >
+        <div class="activity-card-wrapper u-border-radius-standard">
+          <header
+            class="activity-card-header u-flex u-justify-content-space-between"
+          >
+            <h2 class="u-text-preset-5-medium">Exercise</h2>
+            <button aria-label="More options">
+              <svg
+                class="menu-icon u-inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
+              </svg>
+            </button>
+          </header>
+          <section
+            class="c-hours u-align-items-center u-flex u-justify-content-space-between hours"
+          >
+            <p class="u-text-preset-3 current-hours">0hrs</p>
+            <p class="u-text-preset-6 previous-hours">Last Week - 0hrs</p>
+          </section>
+        </div>
+      </article>
 
-        <article data-cardtype="social" class="activity-card">
-          <div class="activity-card-wrapper">
-            <header class="activity-card-header">
-              <h2 class="text-preset-5-medium">Social</h2>
-              <button aria-label="More options">
-                <svg class="menu-icon u-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                </svg>
-              </button>
-            </header>
-            <section class="hours u-align-items-center">
-              <p class="current-hours text-preset-3">0hrs</p>
-              <p class="previous-hours text-preset-6">Last Week - 0hrs</p>
-            </section>
-          </div>
-        </article>
+      <article
+        data-cardtype="social"
+        class="c-activity-card u-border-radius-standard activity-card"
+      >
+        <div class="activity-card-wrapper u-border-radius-standard">
+          <header
+            class="activity-card-header u-flex u-justify-content-space-between"
+          >
+            <h2 class="u-text-preset-5-medium">Social</h2>
+            <button aria-label="More options">
+              <svg
+                class="menu-icon u-inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
+              </svg>
+            </button>
+          </header>
+          <section
+            class="c-hours u-align-items-center u-flex u-justify-content-space-between hours"
+          >
+            <p class="u-text-preset-3 current-hours">0hrs</p>
+            <p class="u-text-preset-6 previous-hours">Last Week - 0hrs</p>
+          </section>
+        </div>
+      </article>
 
-        <article data-cardtype="self-care" class="activity-card">
-          <div class="activity-card-wrapper">
-            <header class="activity-card-header">
-              <h2 class="text-preset-5-medium">Self Care</h2>
-              <button aria-label="More options">
-                <svg class="menu-icon u-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                </svg>
-              </button>
-            </header>
-            <section class="hours u-align-items-center">
-              <p class="current-hours text-preset-3">0hrs</p>
-              <p class="previous-hours text-preset-6">Last Week - 0hrs</p>
-            </section>
-          </div>
-        </article>
+      <article
+        data-cardtype="self-care"
+        class="c-activity-card u-border-radius-standard activity-card"
+      >
+        <div class="activity-card-wrapper u-border-radius-standard">
+          <header
+            class="activity-card-header u-flex u-justify-content-space-between"
+          >
+            <h2 class="u-text-preset-5-medium">Self Care</h2>
+            <button aria-label="More options">
+              <svg
+                class="menu-icon u-inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
+              </svg>
+            </button>
+          </header>
+          <section
+            class="c-hours u-align-items-center u-flex u-justify-content-space-between hours"
+          >
+            <p class="u-text-preset-3 current-hours">0hrs</p>
+            <p class="u-text-preset-6 previous-hours">Last Week - 0hrs</p>
+          </section>
+        </div>
+      </article>
     </main>
   </body>
 </html>

@@ -54,6 +54,8 @@
   --activity-image-size: 64px;
   --menu-icon-size: 24px;
   --activity-background-size: 45px;
+  --border-radius-standard: 15px;
+  --card-before-height: 64px;
 
   /* ---------- SPACING ---------- */
   --space-0: 0;
