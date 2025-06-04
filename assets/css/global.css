@@ -49,6 +49,12 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
+  --photo-size: 64px;
+  --photo-size-large: 78px;
+  --activity-image-size: 64px;
+  --menu-icon-size: 24px;
+  --activity-background-size: 45px;
+
   /* ---------- SPACING ---------- */
   --space-0: 0;
   --space-100: 8px;
@@ -86,7 +92,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 24px;
+    padding-inline: var(--space-300);
     background-color: var(--color-navy-950);
 }
 

@@ -1,36 +1,81 @@
-.dashboard{
-    width: 100%;
-    max-width: 1116px;
-    margin-block: 81px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 24px;
-    place-items: center;
-    justify-content: center;
+.dashboard {
+  width: 100%;
+  max-width: 1116px;
+  margin-block: 81px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: var(--space-300);
+  place-items: center;
+  justify-content: center;
 }
 
 /* --For window screen-- */
-@media screen and (min-width:550px) {
-    .dashboard{
-        grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
-    }
+@media screen and (min-width: 550px) {
+  .dashboard {
+    grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+  }
 
-    .profile-card{
-        grid-column: 1 / -1;
-    }
+  .profile-card {
+    grid-column: 1 / -1;
+  }
+
+  .hours {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: var(--space-100, 8px);
+  }
+
+  .activity-card {
+    padding-top: 33px;
+  }
 }
 
 /* --For window screen-- */
-@media screen and (min-width:1212px) {
-    .dashboard{
-        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
-    }
+@media screen and (min-width: 1212px) {
+  .dashboard {
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+  }
 
-    .profile-card{
-        grid-column: span 1;
-        grid-row: 1 / 3;
-    }
+  .profile-card {
+    grid-column: span 1;
+    grid-row: 1 / 3;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: start !important;
+    gap: var(--space-500);
+    flex: 1;
+  }
+  .profile-photo {
+    height: var(--photo-size-large, 78px);
+    width: var(--photo-size-large, 78px);
+  }
+
+  .profile-name {
+    font-size: var(--text-lg-font-size);
+    line-height: var(--text-lg-line-height);
+  }
+
+  .activity-card {
+    padding-top: var(--activity-background-size, 45px);
+  }
+
+  .view-selector{
+    flex: 0;
+  }
+
+  .view-selector ul {
+    flex-direction: column !important;
+    align-items: start !important;
+    justify-content: start !important;
+    flex-wrap: wrap;
+    gap: var(--space-300, 24px) !important;
+  }
+
+
 }

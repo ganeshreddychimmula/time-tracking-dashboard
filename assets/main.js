@@ -70,18 +70,18 @@ getJSON().then((data)=>{
 
 /* handling resize */
 // handling resize for current hours
-function breakpoint1Handler(){
-        if(window.innerWidth >= 550){
-            if(!handledBreakpoint1){
-                handledBreakpoint1 = true;
-            currentHourSpaces.forEach((currentHour)=> {currentHour.classList.replace("text-preset-3","text-preset-1")});
-            }    
-        }else{
-            handledBreakpoint1 = false;
-            currentHourSpaces.forEach((currentHour)=> {currentHour.classList.replace("text-preset-1", "text-preset-3")});
-        }
-}
+// function breakpoint1Handler(){
+//         if(window.innerWidth >= 550){
+//             if(!handledBreakpoint1){
+//                 handledBreakpoint1 = true;
+//             currentHourSpaces.forEach((currentHour)=> {currentHour.classList.replace("text-preset-3","text-preset-1")});
+//             }    
+//         }else{
+//             handledBreakpoint1 = false;
+//             currentHourSpaces.forEach((currentHour)=> {currentHour.classList.replace("text-preset-1", "text-preset-3")});
+//         }
+// }
 
-breakpoint1Handler();
+// breakpoint1Handler();
 
-window.addEventListener('resize', breakpoint1Handler)
+// window.addEventListener('resize', breakpoint1Handler)

@@ -4,85 +4,433 @@
 
 /* XL Text - 56px / 66px */
 .text-preset-1 {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-xl-font-size);
-    line-height: var(--text-xl-line-height);
-    font-weight: var(--font-weight-light);
-  }
-  
-  /* LG Text - 40px / 47px */
-  .text-preset-2 {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-lg-font-size);
-    line-height: var(--text-lg-line-height);
-    font-weight: var(--font-weight-light);
-  }
-  
-  /* MD Text - 32px / 38px */
-  .text-preset-3 {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-md-font-size);
-    line-height: var(--text-md-line-height);
-    font-weight: var(--font-weight-light);
-  }
-  
-  /* Base Text - 24px / 28px */
-  .text-preset-4 {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-base-font-size);
-    line-height: var(--text-base-line-height);
-    font-weight: var(--font-weight-light);
-  }
-  
-  /* SM Text - 18px / 21px */
-  .text-preset-5-regular {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-sm-font-size);
-    line-height: var(--text-sm-line-height);
-    font-weight: var(--font-weight-regular);
-  }
-  
-  /* SM Text (Medium) - 18px / 21px */
-  .text-preset-5-medium {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-sm-font-size);
-    line-height: var(--text-sm-line-height);
-    font-weight: var(--font-weight-medium);
-  }
-  
-  /* XS Text - 15px / 18px */
-  .text-preset-6 {
-    font-family: var(--font-family-rubik);
-    font-size: var(--text-xs-font-size);
-    line-height: var(--text-xs-line-height);
-    font-weight: var(--font-weight-regular);
-  }
-  
-  /* Additional utility for text alignment */
-  .u-text-center { text-align: center; }
-  .u-text-left   { text-align: left; }
-  .u-text-right  { text-align: right; }
-  
-  .u-align-center{
-    align-items: center;
-  }
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-xl-font-size);
+  line-height: var(--text-xl-line-height);
+  font-weight: var(--font-weight-light);
+}
 
-  .u-align-start{
-    align-items: flex-start;
-  }
+/* LG Text - 40px / 47px */
+.text-preset-2 {
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-lg-font-size);
+  line-height: var(--text-lg-line-height);
+  font-weight: var(--font-weight-light);
+}
 
-  .u-justify-content-start{
-    justify-content: flex-start;
-  }
+/* MD Text - 32px / 38px */
+.text-preset-3 {
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-md-font-size);
+  line-height: var(--text-md-line-height);
+  font-weight: var(--font-weight-light);
+}
 
-  .u-justify-content-center{
-    justify-content: center;
-  }
+/* Base Text - 24px / 28px */
+.text-preset-4 {
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-base-font-size);
+  line-height: var(--text-base-line-height);
+  font-weight: var(--font-weight-light);
+}
 
-  .u-justify-content-space-between{
-    justify-content: space-between;
-  }
+/* SM Text - 18px / 21px */
+.text-preset-5-regular {
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-sm-font-size);
+  line-height: var(--text-sm-line-height);
+  font-weight: var(--font-weight-regular);
+}
 
-  .active{
-    color: var(--color-white);
-  }
+/* SM Text (Medium) - 18px / 21px */
+.text-preset-5-medium {
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-sm-font-size);
+  line-height: var(--text-sm-line-height);
+  font-weight: var(--font-weight-medium);
+}
+
+/* XS Text - 15px / 18px */
+.text-preset-6 {
+  font-family: var(--font-family-rubik);
+  font-size: var(--text-xs-font-size);
+  line-height: var(--text-xs-line-height);
+  font-weight: var(--font-weight-regular);
+}
+
+/* ==========================================================================
+   Typography Utility Classes (U)
+   ========================================================================== */
+
+/* --- Font Family Utilities --- */
+.u-font-rubik {
+  font-family: var(
+    --font-family-rubik
+  ) !important; /* Assuming Rubik is the primary font */
+}
+/* Add more font family utilities if you have others, e.g., .u-font-system */
+
+/* --- Font Size Utilities --- */
+.u-text-xs {
+  font-size: var(--text-xs-font-size) !important;
+}
+.u-text-sm {
+  font-size: var(--text-sm-font-size) !important;
+}
+.u-text-base {
+  font-size: var(--text-base-font-size) !important;
+}
+.u-text-md {
+  font-size: var(--text-md-font-size) !important;
+}
+.u-text-lg {
+  font-size: var(--text-lg-font-size) !important;
+}
+.u-text-xl {
+  font-size: var(--text-xl-font-size) !important;
+}
+/* Add more sizes if needed, e.g., .u-text-2xl, .u-text-3xl */
+
+/* --- Line Height Utilities (Using "leading" prefix, common in utility CSS) --- */
+.u-leading-xs {
+  line-height: var(--text-xs-line-height) !important;
+}
+.u-leading-sm {
+  line-height: var(--text-sm-line-height) !important;
+}
+.u-leading-base {
+  line-height: var(--text-base-line-height) !important;
+}
+.u-leading-md {
+  line-height: var(--text-md-line-height) !important;
+}
+.u-leading-lg {
+  line-height: var(--text-lg-line-height) !important;
+}
+.u-leading-xl {
+  line-height: var(--text-xl-line-height) !important;
+}
+/* Add more line heights if needed */
+
+/* --- Font Weight Utilities --- */
+.u-fw-light {
+  font-weight: var(--font-weight-light) !important;
+}
+.u-fw-regular {
+  font-weight: var(--font-weight-regular) !important;
+}
+.u-fw-medium {
+  font-weight: var(--font-weight-medium) !important;
+}
+.u-fw-bold {
+  font-weight: 700 !important; /* Assuming bold is 700, adjust if different */
+}
+.u-fw-semibold {
+  font-weight: 600 !important; /* Assuming semibold is 600, adjust if different */
+}
+.u-fw-extrabold {
+  font-weight: 800 !important; /* Assuming extrabold is 800, adjust if different */
+}
+/* Add more font weights if needed, e.g., .u-fw-semibold, .u-fw-extrabold */
+/* ==========================================================================
+   Utility Classes for Spacing, Alignment, and Display
+   ========================================================================== */
+
+/* Spacing Utilities */
+
+.u-m-0 {
+  margin: 0 !important;
+}
+.u-m-100 {
+  margin: var(--space-100) !important;
+}
+.u-m-200 {
+  margin: var(--space-200) !important;
+}
+.u-m-300 {
+  margin: var(--space-300) !important;
+}
+.u-m-400 {
+  margin: var(--space-400) !important;
+}
+.u-m-500 {
+  margin: var(--space-500) !important;
+}
+.u-m-auto {
+  margin: auto !important;
+}
+.u-mt-0 {
+  margin-top: 0 !important;
+}
+.u-mt-100 {
+  margin-top: var(--space-100) !important;
+}
+.u-mt-200 {
+  margin-top: var(--space-200) !important;
+}
+.u-mt-300 {
+  margin-top: var(--space-300) !important;
+}
+.u-mt-400 {
+  margin-top: var(--space-400) !important;
+}
+.u-mt-500 {
+  margin-top: var(--space-500) !important;
+}
+.u-mb-0 {
+  margin-bottom: 0 !important;
+}
+.u-mb-100 {
+  margin-bottom: var(--space-100) !important;
+}
+.u-mb-200 {
+  margin-bottom: var(--space-200) !important;
+}
+.u-mb-300 {
+  margin-bottom: var(--space-300) !important;
+}
+.u-mb-400 {
+  margin-bottom: var(--space-400) !important;
+}
+
+.u-mb-500 {
+  margin-bottom: var(--space-500) !important;
+}
+.u-ml-0 {
+  margin-left: 0 !important;
+}
+.u-ml-100 {
+  margin-left: var(--space-100) !important;
+}
+.u-ml-200 {
+  margin-left: var(--space-200) !important;
+}
+.u-ml-300 {
+  margin-left: var(--space-300) !important;
+}
+.u-ml-400 {
+  margin-left: var(--space-400) !important;
+}
+.u-ml-500 {
+  margin-left: var(--space-500) !important;
+}
+.u-mr-0 {
+  margin-right: 0 !important;
+}
+.u-mr-100 {
+  margin-right: var(--space-100) !important;
+}
+.u-mr-200 {
+  margin-right: var(--space-200) !important;
+}
+.u-mr-300 {
+  margin-right: var(--space-300) !important;
+}
+.u-mr-400 {
+  margin-right: var(--space-400) !important;
+}
+.u-mr-500 {
+  margin-right: var(--space-500) !important;
+}
+.u-mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.u-mx-100 {
+  margin-left: var(--space-100) !important;
+  margin-right: var(--space-100) !important;
+}
+.u-mx-200 {
+  margin-left: var(--space-200) !important;
+  margin-right: var(--space-200) !important;
+}
+.u-mx-300 {
+  margin-left: var(--space-300) !important;
+  margin-right: var(--space-300) !important;
+}
+.u-mx-400 {
+  margin-left: var(--space-400) !important;
+  margin-right: var(--space-400) !important;
+}
+.u-mx-500 {
+  margin-left: var(--space-500) !important;
+  margin-right: var(--space-500) !important;
+}
+.u-my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.u-my-100 {
+  margin-top: var(--space-100) !important;
+  margin-bottom: var(--space-100) !important;
+}
+.u-my-200 {
+  margin-top: var(--space-200) !important;
+  margin-bottom: var(--space-200) !important;
+}
+.u-my-300 {
+  margin-top: var(--space-300) !important;
+  margin-bottom: var(--space-300) !important;
+}
+.u-my-400 {
+  margin-top: var(--space-400) !important;
+  margin-bottom: var(--space-400) !important;
+}
+.u-my-500 {
+  margin-top: var(--space-500) !important;
+  margin-bottom: var(--space-500) !important;
+}
+/* Display Utilities */
+.u-block {
+  display: block !important;
+}
+.u-inline {
+  display: inline !important;
+}
+.u-inline-block {
+  display: inline-block !important;
+}
+.u-flex {
+  display: flex !important;
+}
+.u-inline-flex {
+  display: inline-flex !important;
+}
+.u-grid {
+  display: grid !important;
+}
+.u-inline-grid {
+  display: inline-grid !important;
+}
+.u-hidden {
+  display: none !important;
+}
+.u-visible {
+  visibility: visible !important;
+}
+.u-invisible {
+  visibility: hidden !important;
+}
+/* Flexbox Utilities */
+.u-flex-row {
+  flex-direction: row !important;
+}
+.u-flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+.u-flex-column {
+  flex-direction: column !important;
+}
+.u-flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+.u-flex-wrap {
+  flex-wrap: wrap !important;
+}
+.u-flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+.u-flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+.u-flex-justify-start {
+  justify-content: flex-start !important;
+}
+.u-flex-justify-end {
+  justify-content: flex-end !important;
+}
+.u-flex-justify-center {
+  justify-content: center !important;
+}
+.u-flex-justify-between {
+  justify-content: space-between !important;
+}
+.u-flex-justify-around {
+  justify-content: space-around !important;
+}
+.u-flex-justify-evenly {
+  justify-content: space-evenly !important;
+}
+.u-flex-align-start {
+  align-items: flex-start !important;
+}
+.u-flex-align-end {
+  align-items: flex-end !important;
+}
+.u-flex-align-center {
+  align-items: center !important;
+}
+.u-flex-align-baseline {
+  align-items: baseline !important;
+}
+.u-flex-align-stretch {
+  align-items: stretch !important;
+}
+/* Alignment Utilities */
+.u-align-start {
+  align-self: flex-start !important;
+}
+.u-align-end {
+  align-self: flex-end !important;
+}
+.u-align-center {
+  align-self: center !important;
+}
+.u-align-baseline {
+  align-self: baseline !important;
+}
+.u-align-stretch {
+  align-self: stretch !important;
+}
+/* Positioning Utilities */
+.u-relative {
+  position: relative !important;
+}
+.u-absolute {
+  position: absolute !important;
+}
+.u-fixed {
+  position: fixed !important;
+}
+.u-sticky {
+  position: sticky !important;
+}
+
+.u-static {
+  position: static !important;
+}
+
+/* Additional utility for text alignment */
+.u-text-center {
+  text-align: center;
+}
+.u-text-left {
+  text-align: left;
+}
+.u-text-right {
+  text-align: right;
+}
+
+.u-align-items-center {
+  align-items: center;
+}
+
+.u-align-start {
+  align-items: flex-start;
+}
+
+.u-justify-content-start {
+  justify-content: flex-start;
+}
+
+.u-justify-content-center {
+  justify-content: center;
+}
+
+.u-justify-content-space-between {
+  justify-content: space-between;
+}
+
+.active {
+  color: var(--color-white);
+}
