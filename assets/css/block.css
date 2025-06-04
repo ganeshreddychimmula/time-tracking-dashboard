@@ -140,10 +140,12 @@
 @media screen and (min-width: 1212px) {
   .profile-photo {
     box-shadow: inset 1 1 10px 10px var(--color-white);
+    height: var(--photo-size-large, 78px);
+    width: var(--photo-size-large, 78px);
   }
 
   .profile-name {
-   font-size: var(--text-lg-font-size);
-  line-height: var(--text-lg-line-height);
+    font-size: var(--text-lg-font-size);
+    line-height: var(--text-lg-line-height);
   }
 }

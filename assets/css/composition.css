@@ -51,10 +51,6 @@
     gap: var(--space-500);
     flex: 1;
   }
-  .profile-photo {
-    height: var(--photo-size-large, 78px);
-    width: var(--photo-size-large, 78px);
-  }
 
   .profile-name {
     font-size: var(--text-lg-font-size);
