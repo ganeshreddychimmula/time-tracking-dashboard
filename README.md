@@ -65,7 +65,9 @@ During this project, the principles and ideas from the following resources were 
 - [**CSS-Tricks**](https://css-tricks.com)**:** A constant source of excellent articles and tips for all things CSS and web development.
 - **"Be the browser’s mentor, not its micromanager" (Concept):** This idea (often discussed by Andy Bell, related to CUBE CSS) about building flexible, resilient layouts was a guiding principle.
 - [**Utopia - Fluid Space Calculator**](https://utopia.fyi/space/calculator)**:** While perhaps not fully implemented in this version, resources like Utopia are invaluable for understanding and generating fluid typographic and spacing scales, which is a target for continued development.
--[**Custom variable guide**](https://css-tricks.com/a-complete-guide-to-custom-properties/)**:**They help DRY up your CSS. That is “Don’t Repeat Yourself.” Custom properties can make code easier to maintain because you can update one value and have it reflected in multiple places. Careful though, overdoing abstraction can make have the opposite effect and make code less understandable
+-[**Custom variable guide**](https://css-tricks.com/a-complete-guide-to-custom-properties/)**:**They help DRY up your CSS. That is “Don’t Repeat Yourself.” Custom properties can make code easier to maintain because you can update one value and have it reflected in multiple places. Careful though, overdoing abstraction can make have the opposite effect and make code less understandable.They are particularly helpful for things like creating color themes on a website.
+They unlock interesting possibilities in CSS. In no small part because they cascade.
+The fact that they can be updated in JavaScript opens up even more interesting possibilities.
 
 ## Author
 
