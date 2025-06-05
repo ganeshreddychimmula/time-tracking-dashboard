@@ -6,6 +6,77 @@
   padding: 0;
 }
 
+/**fluid type setup */
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1500,18,1.333,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1500;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --f-0-min: 14.00;
+  --f-0-max: 18.00;
+  --font-size-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-1-min: 15.00;
+  --f-1-max: 23.00;
+  --font-size-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-2-min: 23.04;
+  --f-2-max: 31.98;
+  --font-size-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-3-min: 23;
+  --f-3-max: 45;
+  --font-size-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-4-min: 30;
+  --f-4-max: 56.83;
+  --font-size-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-5-min: 39.81;
+  --f-5-max: 75.76;
+  --font-size-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-6-min: 47.78;
+  --f-6-max: 100.98;
+  --font-size-6: calc(
+    ((var(--f-6-min) / 16) * 1rem) + (var(--f-6-max) - var(--f-6-min)) *
+      var(--fluid-bp)
+  );
+}
+
 /* ==============================
    DESIGN TOKENS (from Figma)
    ============================== */
@@ -32,30 +103,22 @@
   --font-family-rubik: "Rubik", sans-serif;
 
   /* Presets */
-  --text-xl-font-size: 56px;
-  --text-xl-line-height: 66px;
-  --text-lg-font-size: 40px;
-  --text-lg-line-height: 47px;
-  --text-md-font-size: 32px;
-  --text-md-line-height: 38px;
-  --text-base-font-size: 24px;
-  --text-base-line-height: 28px;
-  --text-sm-font-size: 18px;
-  --text-sm-line-height: 21px;
-  --text-xs-font-size: 15px;
-  --text-xs-line-height: 18px;
+  --text-xl-font-size: var(--font-size-5, 50px);
+  --text-xl-line-height: calc(var(--font-size-5) + (10px*var(--fluid-bp)));
+  --text-lg-font-size: var(--font-size-4, 40px);
+  --text-lg-line-height: calc(var(--font-size-4) + (7px*var(--fluid-bp)));
+  --text-md-font-size: var(--font-size-3, 32px);
+  --text-md-line-height: calc(var(--font-size-3) + (6px*var(--fluid-bp)));
+  --text-base-font-size: var(--font-size-2, 24px);
+  --text-base-line-height: calc(var(--font-size-2) + (4px*var(--fluid-bp)));
+  --text-sm-font-size: var(--font-size-1, 18px);
+  --text-sm-line-height: calc(var(--font-size-1) + (3px*var(--fluid-bp)));
+  --text-xs-font-size: var(--font-size-0, 15px);
+  --text-xs-line-height: calc(var(--font-size-0) + (3px*var(--fluid-bp)));;
 
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-
-  --photo-size: 64px;
-  --photo-size-large: 78px;
-  --activity-image-size: 64px;
-  --menu-icon-size: 24px;
-  --activity-background-size: 45px;
-  --border-radius-standard: 15px;
-  --card-before-height: 64px;
 
   /* ---------- SPACING ---------- */
   --space-0: 0;
@@ -80,6 +143,16 @@
   --grid-mobile-columns: 4;
   --grid-mobile-gutter: 16px;
   --grid-mobile-offset: 32px;
+}
+
+:root{
+  --photo-size: 64px;
+  --photo-size-large: 78px;
+  --activity-image-size: 64px;
+  --menu-icon-size: 24px;
+  --activity-background-size: 45px;
+  --border-radius-standard: 15px;
+  --card-before-height: 64px;
 }
 
 

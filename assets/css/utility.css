@@ -21,7 +21,7 @@
 /* MD Text - 32px / 38px */
 .u-text-preset-3 {
   font-family: var(--font-family-rubik);
-  font-size: var(--text-md-font-size);
+  font-size: var(--font-size-3,--text-md-font-size);
   line-height: var(--text-md-line-height);
   font-weight: var(--font-weight-light);
 }

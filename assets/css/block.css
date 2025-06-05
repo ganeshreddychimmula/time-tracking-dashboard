@@ -117,10 +117,10 @@
 
 /* --For window screen-- */
 @media screen and (min-width: 550px) {
-  .current-hours {
+  /* .current-hours {
     font-size: var(--text-lg-font-size);
     line-height: var(--text-lg-line-height);
-  }
+  } */
 }
 
 @media screen and (min-width: 1212px) {
@@ -129,8 +129,8 @@
     --photo-size: 78px;
   }
 
-  .profile-name {
+  /* .profile-name {
     font-size: var(--text-lg-font-size);
     line-height: var(--text-lg-line-height);
-  }
+  } */
 }
