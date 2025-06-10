@@ -1,10 +1,30 @@
-.c-dashboard {
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap; /* ↓ The default value is the first point on the modular scale */
+  gap: var(--gutter, var(--space-100));
   width: 100%;
-  max-width: 1116px;
-  margin-block: 81px;
+}
+.with-sidebar > :first-child {
+  /* ↓ The width when the sidebar _is_ a sidebar */
+  flex-basis: 16rem;
+  flex-grow: 1;
+  align-items: stretch;
+}
+.with-sidebar > :last-child {
+  /* ↓ Grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999; /* ↓ Wrap when the elements are of equal width */
+  min-inline-size: 71.5%;
+}
+
+.c-dashboard {
+  /* min-width: 1116px; */
+  /* margin-block: 81px; */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: auto; */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: repeat(auto, 1fr);
   gap: var(--space-300);
   place-items: center;
   justify-content: center;
@@ -14,31 +34,33 @@
   padding: var(--space-300, 24px);
 }
 
-  .c-activity-card-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
+.c-activity-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  .c-hours{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-100, 8px);
-  }
+.c-hours {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-100, 8px);
+}
+
+
 
 /* --For window screen-- */
 @media screen and (min-width: 550px) {
-  .c-dashboard {
+  /* .c-dashboard {
     grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
     grid-template-rows: repeat(auto, 1fr);
-  }
+  } */
 
-  .c-profile-card {
+  /* .c-profile-card {
     grid-column: 1 / -1;
-  }
+  } */
 
   .c-hours {
     flex-direction: column;
@@ -52,9 +74,9 @@
 }
 
 /* --For window screen-- */
-@media screen and (min-width: 1212px) {
+/* @media screen and (min-width: 1212px) {
   .c-dashboard {
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(auto, 1fr);
   }
 
@@ -75,7 +97,6 @@
     padding-top: var(--activity-background-size, 45px);
   }
 
-
   .c-view-selector {
     flex: 0;
     padding: var(--space-300, 24px);
@@ -88,4 +109,4 @@
     flex-wrap: wrap;
     gap: var(--space-300, 24px) !important;
   }
-}
+} */

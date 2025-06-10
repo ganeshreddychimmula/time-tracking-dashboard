@@ -77,6 +77,13 @@
   );
 }
 
+/* Fluid Spacing Setup */
+/* @link https://utopia.fyi/space/calculator?c=320,14,1.2,1500,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+
+}
+
 /* ==============================
    DESIGN TOKENS (from Figma)
    ============================== */
@@ -153,6 +160,7 @@
   --activity-background-size: 45px;
   --border-radius-standard: 15px;
   --card-before-height: 64px;
+  --gutter: var(--space-300)
 }
 
 

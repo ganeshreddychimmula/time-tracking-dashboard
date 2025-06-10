@@ -21,7 +21,7 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
-    <main class="c-dashboard dashboard">
+    <main class="with-sidebar">
       <aside
         class="c-profile-card u-flex u-flex-column u-border-radius-standard profile-card"
       >
@@ -46,28 +46,28 @@
             <li
               data-timeframe="daily"
               data-state=""
-              class="u-text-preset-5-regular timeframe"
+              class="u-text-preset-5-regular u-flex-1 timeframe"
             >
               Daily
             </li>
             <li
               data-timeframe="weekly"
               data-state="active"
-              class="u-text-preset-5-regular timeframe"
+              class="u-text-preset-5-regular u-flex-1 timeframe"
             >
               Weekly
             </li>
             <li
               data-timeframe="monthly"
               data-state=""
-              class="u-text-preset-5-regular timeframe"
+              class="u-text-preset-5-regular u-flex-1 timeframe"
             >
               Monthly
             </li>
           </ul>
         </nav>
       </aside>
-
+<div class="c-dashboard dashboard">
       <article
         data-cardtype="work"
         class="c-activity-card u-border-radius-standard activity-card"
@@ -247,6 +247,7 @@
           </section>
         </div>
       </article>
+    </div>
     </main>
   </body>
 </html>

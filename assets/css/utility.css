@@ -396,6 +396,10 @@
   position: sticky !important;
 }
 
+.u-flex-1 {
+  flex: 1 1 auto !important;
+}
+
 .u-static {
   position: static !important;
 }
@@ -434,8 +438,4 @@
 
 .u-justify-content-space-between {
   justify-content: space-between;
-}
-
-.active {
-  color: var(--color-white);
 }
