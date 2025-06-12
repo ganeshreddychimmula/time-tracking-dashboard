@@ -227,6 +227,9 @@
   visibility: hidden !important;
 }
 /* Flexbox Utilities */
+.u-flex-basis-auto {
+  flex-basis: auto !important;
+}
 .u-flex-row {
   flex-direction: row !important;
 }
@@ -311,9 +314,9 @@
   position: sticky !important;
 }
 
-.u-flex-1 {
+/* .u-flex-1 {
   flex: 1 1 auto !important;
-}
+} */
 
 .u-static {
   position: static !important;
@@ -333,6 +336,10 @@
 }
 .u-text-right {
   text-align: right;
+}
+
+.u-text-wrap-no-wrap {
+  white-space: nowrap;
 }
 
 .u-align-items-center {

@@ -48,6 +48,19 @@
     min-width: 13rem;
 }
 
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--line-height-medium-font)*1rem);
+}
+
+.switcher > * {
+  flex-grow: 0;
+  /* The threshold is the container width at which the layout "breaks" */
+  flex-basis: calc((var(--threshold, 14.375rem) - 100%) * 999);
+}
+
+
 .c-hours {
   /* display: flex;
   flex-direction: row; */
@@ -71,7 +84,7 @@
 
   .c-hours {
     /* flex-direction: column; */
-    align-items: flex-start !important;
+    /* align-items: flex-start !important; */
     gap: var(--space-100, 8px);
   }
 

@@ -248,7 +248,8 @@
 }
 
 :root{
-  --photo-size: 64px;
+  --threshold: 15rem; /* 240px */
+  --photo-size: var(--font-6);
   --photo-size-large: 78px;
   --activity-image-size: 64px;
   --menu-icon-size: 24px;

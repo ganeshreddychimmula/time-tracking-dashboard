@@ -9,7 +9,7 @@
   width: 100%;
   gap: var(--space-300, 24px);
   background-color: var(--color-purple-600);
-  padding: var(--space-400, 32px);
+  padding: var(--space-300, 24px);
   flex:1
 }
 
@@ -38,10 +38,10 @@
 .view-selector ul {
   height: 100%;
   list-style: none;
-  justify-content: center;
+  /* justify-content: center; */
   /* gap: clamp(5px, 5px + 15vw, 200px); */
   cursor: pointer;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .view-selector li:hover {
@@ -118,6 +118,6 @@
 @media screen and (min-width: 1212px) {
   .profile-photo {
     box-shadow: inset 1 1 10px 10px var(--color-white);
-    --photo-size: 78px;
+    /* --photo-size: 78px; */
   }
 }
