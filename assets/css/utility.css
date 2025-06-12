@@ -4,7 +4,6 @@
 
 /* XL Text - 56px / 66px */
 .u-text-preset-1 {
-  font-family: var(--font-family-rubik);
   font-size: var(--text-xl-font-size);
   line-height: var(--text-xl-line-height);
   font-weight: var(--font-weight-light);
@@ -12,7 +11,6 @@
 
 /* LG Text - 40px / 47px */
 .u-text-preset-2 {
-  font-family: var(--font-family-rubik);
   font-size: var(--text-lg-font-size);
   line-height: var(--text-lg-line-height);
   font-weight: var(--font-weight-light);
@@ -20,15 +18,13 @@
 
 /* MD Text - 32px / 38px */
 .u-text-preset-3 {
-  font-family: var(--font-family-rubik);
-  font-size: var(--font-size-3,--text-md-font-size);
+  font-size: var(--text-md-font-size);
   line-height: var(--text-md-line-height);
   font-weight: var(--font-weight-light);
 }
 
 /* Base Text - 24px / 28px */
 .u-text-preset-4 {
-  font-family: var(--font-family-rubik);
   font-size: var(--text-base-font-size);
   line-height: var(--text-base-line-height);
   font-weight: var(--font-weight-light);
@@ -36,7 +32,6 @@
 
 /* SM Text - 18px / 21px */
 .u-text-preset-5-regular {
-  font-family: var(--font-family-rubik);
   font-size: var(--text-sm-font-size);
   line-height: var(--text-sm-line-height);
   font-weight: var(--font-weight-regular);
@@ -44,7 +39,6 @@
 
 /* SM Text (Medium) - 18px / 21px */
 .u-text-preset-5-medium {
-  font-family: var(--font-family-rubik);
   font-size: var(--text-sm-font-size);
   line-height: var(--text-sm-line-height);
   font-weight: var(--font-weight-medium);
@@ -52,89 +46,10 @@
 
 /* XS Text - 15px / 18px */
 .u-text-preset-6 {
-  font-family: var(--font-family-rubik);
   font-size: var(--text-xs-font-size);
   line-height: var(--text-xs-line-height);
   font-weight: var(--font-weight-regular);
 }
-
-/* ==========================================================================
-   Typography Utility Classes (U)
-   ========================================================================== */
-
-/* --- Font Family Utilities --- */
-.u-font-rubik {
-  font-family: var(
-    --font-family-rubik
-  ) !important; /* Assuming Rubik is the primary font */
-}
-/* Add more font family utilities if you have others, e.g., .u-font-system */
-
-/* --- Font Size Utilities --- */
-.u-text-xs {
-  font-size: var(--text-xs-font-size) !important;
-}
-.u-text-sm {
-  font-size: var(--text-sm-font-size) !important;
-}
-.u-text-base {
-  font-size: var(--text-base-font-size) !important;
-}
-.u-text-md {
-  font-size: var(--text-md-font-size) !important;
-}
-.u-text-lg {
-  font-size: var(--text-lg-font-size) !important;
-}
-.u-text-xl {
-  font-size: var(--text-xl-font-size) !important;
-}
-/* Add more sizes if needed, e.g., .u-text-2xl, .u-text-3xl */
-
-/* --- Line Height Utilities (Using "leading" prefix, common in utility CSS) --- */
-.u-leading-xs {
-  line-height: var(--text-xs-line-height) !important;
-}
-.u-leading-sm {
-  line-height: var(--text-sm-line-height) !important;
-}
-.u-leading-base {
-  line-height: var(--text-base-line-height) !important;
-}
-.u-leading-md {
-  line-height: var(--text-md-line-height) !important;
-}
-.u-leading-lg {
-  line-height: var(--text-lg-line-height) !important;
-}
-.u-leading-xl {
-  line-height: var(--text-xl-line-height) !important;
-}
-/* Add more line heights if needed */
-
-/* --- Font Weight Utilities --- */
-.u-fw-light {
-  font-weight: var(--font-weight-light) !important;
-}
-.u-fw-regular {
-  font-weight: var(--font-weight-regular) !important;
-}
-.u-fw-medium {
-  font-weight: var(--font-weight-medium) !important;
-}
-.u-fw-bold {
-  font-weight: 700 !important; /* Assuming bold is 700, adjust if different */
-}
-.u-fw-semibold {
-  font-weight: 600 !important; /* Assuming semibold is 600, adjust if different */
-}
-.u-fw-extrabold {
-  font-weight: 800 !important; /* Assuming extrabold is 800, adjust if different */
-}
-/* Add more font weights if needed, e.g., .u-fw-semibold, .u-fw-extrabold */
-/* ==========================================================================
-   Utility Classes for Spacing, Alignment, and Display
-   ========================================================================== */
 
 /* Spacing Utilities */
 

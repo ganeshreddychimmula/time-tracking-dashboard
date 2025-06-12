@@ -2,9 +2,7 @@
 .profile-card {
   width: 100%;
   background-color: var(--color-navy-900);
-  color: var(--color-purple-500);
   overflow: hidden;
-
 }
 
 .profile-header {
@@ -12,7 +10,6 @@
   gap: var(--space-300, 24px);
   background-color: var(--color-purple-600);
   padding: var(--space-400, 32px);
-  color: var(--color-white);
   flex:1
 }
 
@@ -33,9 +30,9 @@
 }
 
 .view-selector {
-  height: 100%;
   width: 100%;
   flex:0;
+  color: var(--color-purple-500);
 }
 
 .view-selector ul {
@@ -71,8 +68,7 @@
   left: 0;
   right: 0;
   height: var(--card-before-height, 64px);
-  border-radius: var(--border-radius-standard, 20px)
-    var(--border-radius-standard, 20px) 0 0 !important;
+  border-radius: var(--border-radius-standard, 20px) var(--border-radius-standard, 20px) 0 0 !important;
   z-index: 0;
 }
 
@@ -91,10 +87,6 @@
   cursor: pointer;
 }
 
-.activity-card-header h2 {
-  color: var(--color-white);
-}
-
 .activity-card-header button {
   color: var(--color-navy-200);
   background: none;
@@ -111,7 +103,7 @@
 }
 
 .current-hours {
-  color: var(--color-white);
+  color: inherit;
 }
 
 .previous-hours {
@@ -119,21 +111,13 @@
 }
 
 /* --For window screen-- */
-@media screen and (min-width: 550px) {
-  /* .current-hours {
-    font-size: var(--text-lg-font-size);
-    line-height: var(--text-lg-line-height);
-  } */
-}
+/* @media screen and (min-width: 550px) {
+
+} */
 
 @media screen and (min-width: 1212px) {
   .profile-photo {
     box-shadow: inset 1 1 10px 10px var(--color-white);
     --photo-size: 78px;
   }
-
-  /* .profile-name {
-    font-size: var(--text-lg-font-size);
-    line-height: var(--text-lg-line-height);
-  } */
 }
