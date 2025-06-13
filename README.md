@@ -56,6 +56,7 @@ In future development, I would like to focus on:
 - **Further refining utility classes:** Extracting more granular utilities for typography, spacing, and colors to make the CSS even more modular.
 - **Implementing fluid typography and spacing:** Using techniques like `clamp()` or viewport units to make the design scale more smoothly across all screen sizes, rather than relying solely on breakpoints.
 - **Adding interactivity with JavaScript:** Currently, the timeframe switching (Daily, Weekly, Monthly) is visual. The next step would be to implement JavaScript to dynamically change the displayed data based on the selected timeframe.
+- **"Before adding to a system, first consider whether anything similar exists, and if so, can the design can be adapted to use the system after all."**
 
 ### Useful Resources
 
