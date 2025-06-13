@@ -7,9 +7,9 @@
 
 .profile-header {
   width: 100%;
-  gap: var(--space-300, 24px);
+  gap: var(--space-l, 24px);
   background-color: var(--color-purple-600);
-  padding: var(--space-300, 24px);
+  padding: var(--space-l, 24px);
   flex:1
 }
 
@@ -22,7 +22,7 @@
 }
 
 .profile-info {
-  gap: var(--space-100, 8px);
+  gap: var(--space-2xs, 8px);
 }
 
 .report-label {
@@ -54,7 +54,7 @@
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
   position: relative;
-  padding-top: var(--space-500, 40px);
+  padding-top: var(--space-l-xl, 40px);
   background-color: var(--color-white);
 }
 
@@ -66,7 +66,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: var(--card-before-height, 64px);
+  height: var(--activity-icon-size, 64px);
   border-radius: var(--border-radius-standard, 20px) var(--border-radius-standard, 20px) 0 0 !important;
   z-index: 0;
 }
