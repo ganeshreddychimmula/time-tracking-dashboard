@@ -1,3 +1,6 @@
+@import url("https://fonts.google.com/specimen/Rubik");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+
 *,
 ::after,
 ::before {
@@ -233,7 +236,9 @@
   --border-radius-standard: var(--font-0);
   --activity-icon-size: var(--space-2xl);
   --gutter: var(--space-300);
-  --collapse-point: 70%;
+  --min-grid-item-size: 11.5rem;
+  --limit-point: calc(4 * var(--min-grid-item-size) + 2 * var(--gutter));
+  --collapse-point:70%;
 }
 
 
