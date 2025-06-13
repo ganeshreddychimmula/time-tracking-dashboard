@@ -2,7 +2,6 @@
       padding-inline: var(--space-m-3xl);
       max-inline-size: 1400px;
 }
-
 .with-sidebar {
   display: flex;
   flex-wrap: wrap; /* ↓ The default value is the first point on the modular scale */
@@ -20,6 +19,7 @@
   flex-basis: 0;
   flex-grow: 999; /* ↓ Wrap when the elements are of equal width */
   min-inline-size: var(--collapse-point);
+  /* max-inline-size: var(--limit-point); */
 }
 
 .c-dashboard {
@@ -28,15 +28,20 @@
   display: grid;
   /* grid-template-columns: 1fr;
   grid-template-rows: auto; */
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  grid-template-rows: repeat(auto, 1fr);
-  gap: var(--space-m-l);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-grid-item-size), 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
   place-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: var(--gutter, var(--space-m-l));
+}
+
+.grid-container>*{
+  margin:0;
 }
 
 .c-view-selector {
-  padding: var(--space-300, 24px);
+  padding: var(--space-300-400, 24px);
 }
 
 .c-activity-card-header {

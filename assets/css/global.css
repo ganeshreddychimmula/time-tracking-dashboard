@@ -223,6 +223,7 @@
   --space-100: var(--space-2xs, 8px);
   --space-200: var(--space-s, 16px);
   --space-300: var(--space-m, 24px);
+  --space-300-400: var(--space-m-l, 32px);
   --space-400: var(--space-l, 32px);
   --space-500: var(--space-xl, 40px);
 }
