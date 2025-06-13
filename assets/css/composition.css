@@ -1,6 +1,6 @@
 .box{
       padding-inline: var(--space-m-3xl);
-      max-inline-size: 1500px;
+      max-inline-size: 1400px;
 }
 
 .with-sidebar {
@@ -30,7 +30,7 @@
   grid-template-rows: auto; */
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   grid-template-rows: repeat(auto, 1fr);
-  gap: var(--space-m);
+  gap: var(--space-m-l);
   place-items: center;
   justify-content: center;
 }
