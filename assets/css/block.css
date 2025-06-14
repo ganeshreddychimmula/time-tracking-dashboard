@@ -7,7 +7,7 @@ main{
 
 /* Profile Card */
 .profile-card {
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--color-navy-900);
   overflow: hidden;
 }
@@ -41,10 +41,7 @@ main{
 
 .view-selector ul {
   list-style: none;
-  /* justify-content: center; */
-  /* gap: clamp(5px, 5px + 15vw, 200px); */
   cursor: pointer;
-  /* text-align: center; */
   justify-content: space-between;
   max-inline-size:var(--max-timeframe-options-bar-size, 30rem);
   margin-inline: auto;
@@ -62,6 +59,7 @@ main{
   position: relative;
   padding-top: var(--space-l-xl, 40px);
   background-color: var(--color-white);
+  display: flex;
 }
 
 .activity-card::before {
@@ -83,6 +81,7 @@ main{
   flex-direction: column;
   z-index: 1;
   position: relative;
+  flex-grow: 1;
 }
 
 .activity-card-wrapper:hover {
