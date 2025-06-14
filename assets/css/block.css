@@ -89,6 +89,12 @@ main{
   cursor: pointer;
 }
 
+.activity-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .activity-card-header button {
   color: var(--color-navy-200);
   background: none;
@@ -102,6 +108,10 @@ main{
   height: var(--menu-icon-size, 24px);
   vertical-align: middle;
   fill: currentColor;
+}
+
+.hours{
+    gap: var(--space-100, 8px);
 }
 
 .current-hours {
