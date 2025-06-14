@@ -1,4 +1,3 @@
-@import url("https://fonts.google.com/specimen/Rubik");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 
 *,
@@ -229,15 +228,18 @@
 }
 
 :root{
+  --max-inline-size: 87.5rem;
   --threshold: 15rem; /* 240px */
+  --sidebar-width:16rem;
   --photo-size: var(--font-6);
+  --max-timeframe-options-bar-size: 30rem;
   --activity-image-size: 4rem;
   --menu-icon-size: var(--space-m);
   --activity-background-size: 2.18rem;
   --border-radius-standard: var(--font-0);
   --activity-icon-size: var(--space-2xl);
   --gutter: var(--space-300);
-  --min-grid-item-size: 11.5rem;
+  --min-grid-item-size: 12rem;
   --limit-point: calc(4 * var(--min-grid-item-size) + 2 * var(--gutter));
   --collapse-point:70%;
 }
@@ -251,11 +253,7 @@ html, body{
 }
 
 body{
-    min-height: 100vh;
     height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--color-navy-950);
     color: var(--color-white);
 }

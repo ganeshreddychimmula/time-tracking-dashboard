@@ -1,25 +1,41 @@
-.box{
-      padding-inline: var(--space-m-3xl);
-      max-inline-size: 1400px;
+.c-box {
+  padding: var(--space-300, 24px); /* Use a global spacing token */
+  background-color: inherit;
+  border-radius: var(--border-radius-standard);
+  /* Add any other "box-like" defaults here */
 }
-.with-sidebar {
+
+.c-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This is one way to center the main item */
+  align-items: center;
+  min-height: 100vh; /* Fills its container */
+}
+
+.c-sidebar-layout {
   display: flex;
   flex-wrap: wrap; /* ↓ The default value is the first point on the modular scale */
   gap: var(--gutter, var(--space-m-l));
   width: 100%;
 }
-.with-sidebar > :first-child {
+.c-sidebar-layout > :first-child {
   /* ↓ The width when the sidebar _is_ a sidebar */
   flex-basis: 16rem;
   flex-grow: 1;
   align-items: stretch;
 }
-.with-sidebar > :last-child {
+.c-sidebar-layout > :last-child {
   /* ↓ Grow from nothing */
   flex-basis: 0;
   flex-grow: 999; /* ↓ Wrap when the elements are of equal width */
   min-inline-size: var(--collapse-point);
   /* max-inline-size: var(--limit-point); */
+}
+
+/* The Stack primitive */
+.c-stack > * + * {
+  margin-block-start: var(--space-300, 1.5rem);
 }
 
 .c-dashboard {
@@ -28,16 +44,17 @@
   display: grid;
   /* grid-template-columns: 1fr;
   grid-template-rows: auto; */
-  grid-template-columns: repeat(auto-fit, minmax(var(--min-grid-item-size), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--min-grid-item-size), 1fr)
+  );
   grid-template-rows: repeat(auto-fit, 1fr);
-  place-items: center;
   justify-content: space-between;
-  align-content: space-between;
   gap: var(--gutter, var(--space-m-l));
 }
 
-.grid-container>*{
-  margin:0;
+.c-dashboard > * {
+  min-width: 0;
 }
 
 .c-view-selector {
@@ -51,35 +68,31 @@
   width: 100%;
 }
 
-.cluster{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: var(--threshold);
+.c-cluster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.switcher {
+.c-switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: calc(var(--line-height-medium-font)*1rem);
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--line-height-medium-font) * 1rem);
 }
 
-.switcher > * {
+.c-switcher > * {
   flex-grow: 0;
   /* The threshold is the container width at which the layout "breaks" */
   flex-basis: calc((var(--threshold) - 100%) * 999);
 }
 
-
 .c-hours {
   /* display: flex;
   flex-direction: row; */
-  align-items: center;
-  justify-content: space-between;
   gap: var(--space-100, 8px);
 }
-
-
 
 /* --For window screen-- */
 @media screen and (min-width: 550px) {
@@ -94,7 +107,7 @@
 
   /* .c-hours {
     flex-direction: column; */
-    /* align-items: flex-start !important;
+  /* align-items: flex-start !important;
     gap: var(--space-100, 8px); 
   } */
 

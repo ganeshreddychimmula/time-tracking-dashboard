@@ -20,11 +20,11 @@
 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
-  <body>
-    <main class="box with-sidebar">
+  <body class="c-cover">
+    <main class="c-box c-sidebar-layout">
       <aside class="c-profile-card u-border-radius-standard profile-card">
         <header
-          class="c-profile-header switcher u-justify-content-start u-align-center u-border-radius-standard profile-header"
+          class="c-box c-stack c-switcher u-justify-content-start profile-header"
         >
           <img
             src="images/image-jeremy.png"
@@ -40,25 +40,25 @@
           class="c-view-selector view-selector"
           aria-label="Time view options"
         >
-          <ul class="switcher u-justify-content-center u-text-preset-5-regular u-flow-basis-auto">
+          <ul class="c-switcher u-text-preset-5-regular u-flow-basis-auto">
             <li
               data-timeframe="daily"
               data-state=""
-              class="u-flex-1 timeframe"
+              class="timeframe"
             >
               Daily
             </li>
             <li
               data-timeframe="weekly"
               data-state="active"
-              class="u-flex-1 timeframe"
+              class="timeframe"
             >
               Weekly
             </li>
             <li
               data-timeframe="monthly"
               data-state=""
-              class="u-flex-1 timeframe"
+              class="timeframe"
             >
               Monthly
             </li>
@@ -71,7 +71,7 @@
           data-cardtype="work"
           class="c-activity-card u-border-radius-standard activity-card"
         >
-          <div class="activity-card-wrapper u-border-radius-standard">
+          <div class="c-box c-stack activity-card-wrapper u-border-radius-standard">
             <header class="c-activity-card-header activity-card-header">
               <h2 class="u-text-preset-5-medium">Work</h2>
               <button aria-label="More options">
@@ -86,7 +86,7 @@
                 </svg>
               </button>
             </header>
-            <section class="switcher c-hours hours">
+            <section class="c-switcher c-hours hours">
               <p class="u-text-preset-3 current-hours">0hrs</p>
               <p class="u-text-preset-6 u-text-wrap-no-wrap previous-hours">Last Week - 0hrs</p>
             </section>
@@ -97,7 +97,7 @@
           data-cardtype="play"
           class="c-activity-card u-border-radius-standard activity-card"
         >
-          <div class="activity-card-wrapper u-border-radius-standard">
+          <div class="c-box c-stack activity-card-wrapper u-border-radius-standard">
             <header class="c-activity-card-header activity-card-header">
               <h2 class="u-text-preset-5-medium">Play</h2>
               <button aria-label="More options">
@@ -112,7 +112,7 @@
                 </svg>
               </button>
             </header>
-            <section class="switcher c-hours hours">
+            <section class="c-switcher c-hours hours">
               <p class="u-text-preset-3 current-hours">0hrs</p>
               <p class="u-text-preset-6 u-text-wrap-no-wrap previous-hours">Last Week - 0hrs</p>
             </section>
@@ -123,7 +123,7 @@
           data-cardtype="study"
           class="c-activity-card u-border-radius-standard activity-card"
         >
-          <div class="activity-card-wrapper u-border-radius-standard">
+          <div class="c-box c-stack activity-card-wrapper u-border-radius-standard">
             <header class="c-activity-card-header activity-card-header">
               <h2 class="u-text-preset-5-medium">Study</h2>
               <button aria-label="More options">
@@ -138,7 +138,7 @@
                 </svg>
               </button>
             </header>
-            <section class="switcher c-hours hours">
+            <section class="c-switcher c-hours hours">
               <p class="u-text-preset-3 current-hours">0hrs</p>
               <p class="u-text-preset-6 u-text-wrap-no-wrap previous-hours">Last Week - 0hrs</p>
             </section>
@@ -149,7 +149,7 @@
           data-cardtype="exercise"
           class="c-activity-card u-border-radius-standard activity-card"
         >
-          <div class="activity-card-wrapper u-border-radius-standard">
+          <div class="c-box c-stack activity-card-wrapper u-border-radius-standard">
             <header class="c-activity-card-header activity-card-header">
               <h2 class="u-text-preset-5-medium">Exercise</h2>
               <button aria-label="More options">
@@ -164,7 +164,7 @@
                 </svg>
               </button>
             </header>
-            <section class="switcher c-hours hours">
+            <section class="c-switcher c-hours hours">
               <p class="u-text-preset-3 current-hours">0hrs</p>
               <p class="u-text-preset-6 u-text-wrap-no-wrap previous-hours">Last Week - 0hrs</p>
             </section>
@@ -175,7 +175,7 @@
           data-cardtype="social"
           class="c-activity-card u-border-radius-standard activity-card"
         >
-          <div class="activity-card-wrapper u-border-radius-standard">
+          <div class="c-box c-stack activity-card-wrapper u-border-radius-standard">
             <header class="c-activity-card-header activity-card-header">
               <h2 class="u-text-preset-5-medium">Social</h2>
               <button aria-label="More options">
@@ -190,7 +190,7 @@
                 </svg>
               </button>
             </header>
-            <section class="switcher c-hours hours">
+            <section class="c-switcher c-hours hours">
               <p class="u-text-preset-3 current-hours">0hrs</p>
               <p class="u-text-preset-6 u-text-wrap-no-wrap previous-hours">Last Week - 0hrs</p>
             </section>
@@ -201,7 +201,7 @@
           data-cardtype="self-care"
           class="c-activity-card u-border-radius-standard activity-card"
         >
-          <div class="activity-card-wrapper u-border-radius-standard">
+          <div class="c-box c-stack activity-card-wrapper u-border-radius-standard">
             <header class="c-activity-card-header activity-card-header">
               <h2 class="u-text-preset-5-medium">Self Care</h2>
               <button aria-label="More options">
@@ -216,7 +216,7 @@
                 </svg>
               </button>
             </header>
-            <section class="switcher c-hours hours">
+            <section class="c-switcher c-hours hours">
               <p class="u-text-preset-3 current-hours">0hrs</p>
               <p class="u-text-preset-6 u-text-wrap-no-wrap previous-hours">Last Week - 0hrs</p>
             </section>
