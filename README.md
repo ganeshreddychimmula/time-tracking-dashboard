@@ -25,8 +25,14 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 The challenge was to build out this time tracking dashboard component and get it looking as close to the design as possible. Users should be able to switch between viewing daily, weekly, and monthly stats.
 
 ### Screenshot
+![Desktop](./images/ss/laptopWithHiDPIScreen.jpeg)
+![Mobile Layout](./images/ss/iPhone%2012%20Pro.jpeg)
+![Tablet](./images/ss/Surface%20Pro%207.jpeg)
+![iphone 4](./images/ss/iPhone%204.jpeg)
+![Surface Pro 7](./images/ss/Surface%20Pro%207.jpeg)
+![TV](./images/ss/tv.jpg)
 
-*Note: Replace the placeholder above with an actual screenshot of your completed project.*
+
 
 ## My Process
 
@@ -34,29 +40,39 @@ The challenge was to build out this time tracking dashboard component and get it
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- CUBE CSS methodology (for structure and organization)
+- Flexbox & CSS Grid
+- **CUBE CSS** methodology for a scalable and maintainable architecture.
+- **Every Layout** principles for building robust, intrinsic layouts.
+- Mobile-first workflow
+- Vanilla JavaScript for data handling and state management.
 - Mobile-first workflow
 
 ### What I Learned
+This project was a deep dive into creating a resilient and logical front-end architecture. The main focus was the practical application of **CUBE CSS** combined with the layout primitives from **"Every Layout"**.
+
+The goal was to move beyond simply recreating a design and instead build a system that is flexible and adapts to its content and context, not just a set of device breakpoints.
+
+- **Intrinsic Layout Primitives**: I focused on identifying and implementing several "Every Layout" primitives to create a more robust structure that governs itself.
+    - **The Sidebar Layout**: Used for the main page structure. I learned to create a container-based breakpoint where the layout shifts from horizontal to vertical based on available space, not a rigid media query. This makes the component highly reusable.
+    - **The Stack Primitive**: Implemented using the `* + *` selector to manage vertical spacing between elements within each card, ensuring consistent rhythm and flow without redundant margin classes.
+    - **The Switcher**: Used for the main content and hours section in each card, allowing elements to switch from a horizontal arrangement to a vertical one when compressed, preventing overflow and maintaining readability.
+- **Fluid Design with Custom Properties**: I leaned heavily on CSS custom properties not just for colors, but for creating a fluid type and space scale using `clamp()`. This ensures the entire interface scales smoothly and proportionally with the viewport, embodying the "be the browser's mentor, not its micromanager" philosophy.
+- **Clean State Management**: I reinforced the practice of using JavaScript solely for state management (fetching data and updating `data-state` attributes) and letting CSS handle all visual representation based on those states. This creates a clean, maintainable separation of concerns.
 
 This project was a great opportunity to practice and explore the **CUBE CSS methodology**. I focused on breaking down the interface into:
+
 - **Composition (C):** Defining the overall layout and structure of the dashboard.
 - **Utility (U):** Creating reusable utility classes for common styling needs (e.g., font weights, colors, spacing - though this can be an area for further refinement).
 - **Block (B):** Identifying distinct components like the profile card and the individual time tracking cards.
 - **Exception (E):** Handling variations, such as the different colors and icons for each activity card.
 
-I also focused on creating a responsive design that adapts to different screen sizes, primarily using CSS Grid and Flexbox for layout.
 
 ### Continued Development
 
 In future development, I would like to focus on:
-
-- **Further refining utility classes:** Extracting more granular utilities for typography, spacing, and colors to make the CSS even more modular.
-- **Implementing fluid typography and spacing:** Using techniques like `clamp()` or viewport units to make the design scale more smoothly across all screen sizes, rather than relying solely on breakpoints.
-- **Adding interactivity with JavaScript:** Currently, the timeframe switching (Daily, Weekly, Monthly) is visual. The next step would be to implement JavaScript to dynamically change the displayed data based on the selected timeframe.
-- **"Before adding to a system, first consider whether anything similar exists, and if so, can the design can be adapted to use the system after all."**
+- **Refine the Grid Primitive**: While the current dashboard uses a simple grid, I want to explore the `minmax()` and `auto-fit` techniques from "Every Layout" to create an even more powerful and automated grid system for the activity cards.
+- **Enhance Accessibility**: Conduct a more thorough accessibility audit, particularly around focus management for the interactive elements and ensuring all components are properly announced by screen readers.
+- **Explore Container Queries**: As container queries gain more browser support, I'd like to refactor the layout primitives to use `@container` instead of the Flexbox-based "hacks," which would simplify the CSS even further.
 
 ### Useful Resources
 
@@ -75,6 +91,8 @@ The fact that they can be updated in JavaScript opens up even more interesting p
 - [**EVERY LAYOUT**](https://every-layout.dev/)**:** Learn to write better, resilient CSS
 
 ## Notes
+- A balanced CSS architecture was key: a foundation of fluid custom properties, preset classes for semantic components, and utility classes for granular overrides.
+
 -  The dimensions of our elements should be largely derived from their inner content and outer context. When we try to prescribe dimensions, things tend to go amiss. All we should be doing as visual designers is making suggestions as to how the layout should take shape. We might, for instance, apply a min-height  or proffer a flex-basis.
 
 - The CSS of suggestion is at the heart of algorithmic layout design. Instead of telling browsers what to do, we allow browsers to make their own calculations, and draw their own conclusions, to best suit the user, their screen, and device. Nobody should experience obscured content under any circumstances.
@@ -152,10 +170,9 @@ The fact that they can be updated in JavaScript opens up even more interesting p
 - Frontend Mentor - [@ganeshreddychimmula](https://www.frontendmentor.io/profile/ganeshreddychimmula)
 
 ## Acknowledgments
-
 - Thanks to Frontend Mentor for providing this challenge.
-- The CUBE CSS methodology by Andy Bell provided a great framework for thinking about CSS architecture.
+- Andy Bell and Heydon Pickering for their work on CUBE CSS and Every Layout.
 - The broader web development community and resources like CSS-Tricks for continuous learning.
+- AI tools like Google NotebookLM and Gemini for assistance in research and documentation.
 - CSS-only fluid modular type scales By Trys Mudford**
-- Google NotebookLM
-- Gemini, ChatGPT
+
